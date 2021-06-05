@@ -1,12 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 clear
-echo "\033[32m
+echo "
      ___               _        ___                    
     | _ )  __ _   ___ | |_     | __|  __ _   ___  _  _ 
     | _ \ / _` | (_-< | ' \    | _|  / _` | (_-< | || |
     |___/ \__,_| /__/ |_||_|   |___| \__,_| /__/  \_, |
                                                   |__/
-    \033[0m"
+     "
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
@@ -24,12 +24,12 @@ echo 'deb https://github.com/gushmazuko/metasploit_in_termux/raw/master gushmazu
 pkg install -y gnupg
 curl -fsSL https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/gushmazuko-gpg.pubkey | gpg --dearmor | tee $PREFIX/etc/apt/trusted.gpg.d/gushmazuko-repo.gpg
 
-echo '(Repositorio do Modulo GNUP)
+echo '## (Repositorio do Modulo GNUP)
 Pacote: GNUP
 Liberação: Bash Easy
 Prioridade: 100
 
-(Pacote de compilação e execução Ruby)
+## (Pacote de compilação e execução Ruby)
 Pacote: Ruby IDE
 Liberação: Bash Easy
 Prioridade: 1001' | tee $PREFIX/etc/apt/preferences.d/preferences
