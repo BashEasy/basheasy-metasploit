@@ -1,10 +1,8 @@
 # Codigo de instalação da ferramenta.
 
-pkg install git
+pkg install wget
 
-git clone https://github.com/BashEasy/basheasy-metasploit
-
-cd basheasy-metasploit
+wget https://github.com/BashEasy/basheasy-metasploit
 
 chmod +x metasploit.sh
 
