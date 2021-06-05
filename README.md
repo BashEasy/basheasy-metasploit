@@ -2,7 +2,7 @@
 
 pkg install wget
 
-wget https://github.com/BashEasy/basheasy-metasploit
+wget https://raw.githubusercontent.com/BashEasy/basheasy-metasploit/main/metasploit.sh
 
 chmod +x metasploit.sh
 
